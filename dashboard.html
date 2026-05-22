@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckMyDevice || Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+
+    <div class="top-bar">
+        <span class="menu">☰</span>
+        <p class="title">CMD Dashboard</p>
+        <button onclick="logout()"
+    class="logout-btn">
+        Logout
+    </button>
+        <img src="Miebi.png" class="profile">
+    </div>
+
+    <div class="welcome">
+        <h2>Hello, User 👋</h2>
+        <p>Here's what's happening with your device.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card green">
+            <p class="icon">📍</p>
+            <h3>Location Tracker</h3>
+            <p>See your current location on map</p>
+            <button onclick="getLocation()">Check Now</button>
+        </div>
+
+        <div class="card yellow">
+            <p class="icon">🔋</p>
+            <h3>Battery Status</h3>
+            <p>Check your battery health</p>
+            <button onclick="getBattery()">Check Now</button>
+        </div>
+
+        <div class="card blue">
+            <p class="icon">🎤</p>
+            <h3>Speech to Text</h3>
+            <p>Convert speech to text</p>
+            <button onclick="startSpeech()">Try Now</button>
+        </div>
+
+        <div class="card purple">
+            <p class="icon">📷</p>
+            <h3>Camera Access</h3>
+            <p>Use your camera</p>
+            <button onclick="openCamera()">Open Camera</button>
+        </div>
+
+        <div class="card teal wide">
+            <p class="icon">📁</p>
+            <h3>Media Access</h3>
+            <p>View your files</p>
+            <button onclick="openMedia()">Open Media</button>
+        </div>
+    </div>
+  
+    <div id="popup" class="popup">
+    <div class="popup-card">
+        <span id="closeBtn">&times;</span>
+        <h2 id="popupTitle">Title</h2>
+        <p id="popupContent">Content goes here...</p>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+<script src="dashboard.js"></script>
+</div>
+</body>
+</html>

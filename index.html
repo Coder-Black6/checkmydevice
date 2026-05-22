@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckMyDevice || App</title>  
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <p class="logo">CMD</p>
+        <a href="#" class="sign-up-btn">Sign up</a>
+    </div>
+    <div class="container">
+        <div class="box-1">   
+            <div class="para">
+                <p class="welcome-txt"> Welcome 👋</p>
+                <p class="normal">We are so excited to have you here. CMD (Check My Device) is a platform where you play around by just checking your phone location, battery and other interesting stuffs from your phone device.</p>
+            </div>                                                                                             
+            <img src="Miebi.png"  class="image">
+        </div>
+        <div class="box-2">
+            <p id="threeD">Check Your Device and Have Fun </p>
+            <div class="floating f1"></div>
+<div class="floating f2"></div>
+<div class="floating f3"></div>
+<div class="floating f4"></div>
+        </div>
+        <a href="#" class="sign-in-btn">Sign in</a>
+    </div>
+    <div class="auth-modal" id="authModal">
+    <div class="auth-card">
+        <h2>Welcome</h2>
+        <input 
+type="email"
+id="email"
+placeholder="Email">
+
+<input 
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="signUp()">
+    Sign Up
+</button>
+
+ <button onclick="login()">
+    Sign In
+</button> 
+    </div>
+</div>
+    <footer>
+        <p id="p-txt">About</p>
+        <p id="p-txt">Privacy</p>
+        <p id="p-txt">T&C</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
